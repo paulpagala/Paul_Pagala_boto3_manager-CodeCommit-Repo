@@ -83,14 +83,14 @@ if __name__ == '__main__':
     list_subscriptions = list_sns_subscriptions()
     log.info(f'{list_subscriptions}')
     
-    unsubscribe_topics = unsubscribe_sns_topic('')
+    unsubscribe_topics = unsubscribe_sns_topic('arn:aws:sns:ap-southeast-1:337008671328:price_updates_pj:03373dbd-443c-4a52-b73e-ccc0cd301a5b')
     log.info(f'{unsubcribe_topics}')
 
     list_topics = list_sns_topics()
     log.info(f'{list_topics}')
     
     
-    delete_topic = delete_sns_topic(arn)
+    delete_topic = delete_sns_topic('arn:aws:sns:ap-southeast-1:337008671328:price_updates_pj')
     log.info('f{delete_topic}')
 
     list_topics = list_sns_topics()
